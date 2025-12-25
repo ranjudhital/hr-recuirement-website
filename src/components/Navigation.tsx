@@ -35,7 +35,7 @@ export default function Navigation({ activeSection, scrollToSection }: Navigatio
             <ImageWithFallback 
               src="/logo.png" 
               alt="Job Ladder Recruitment" 
-              className="h-12 w-auto object-contain group-hover:opacity-90 transition-opacity"
+              className="h-20 w-auto object-contain group-hover:opacity-90 transition-opacity"
             />
           </button>
 
