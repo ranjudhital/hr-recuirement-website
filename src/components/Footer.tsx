@@ -1,4 +1,5 @@
 import { Linkedin, Twitter, Facebook, Mail } from 'lucide-react';
+import { ImageWithFallback } from './figma/ImageWithFallback';
 
 interface FooterProps {
   scrollToSection: (section: string) => void;
@@ -34,14 +35,11 @@ export default function Footer({ scrollToSection }: FooterProps) {
           {/* Brand */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-11 h-11 bg-[#0066CC] rounded-2xl flex items-center justify-center">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M7 22V10M17 22V10M7 10L12 3L17 10M3 10H21M5 14H9M15 14H19M5 18H9M15 18H19" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </div>
-              <span style={{ fontSize: '22px', fontWeight: '700', letterSpacing: '-0.02em' }}>
-                JobLadder
-              </span>
+              <ImageWithFallback 
+                src="/logo.png" 
+                alt="Job Ladder Recruitment" 
+                className="h-12 w-auto object-contain"
+              />
             </div>
             <p className="text-white/60 mb-8 max-w-sm" style={{ fontSize: '16px', lineHeight: '1.6' }}>
               Strategic recruitment and HR consulting for ambitious companies and professionals.
